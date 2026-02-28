@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>POWERFORGE</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="img/logo.jpg" alt="logo palestra" id="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#corsi">Corsi</a></li>
+                <li><a href="#form-iscrizione">Iscrizione</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+                <li><a href="#galleria">Galleria</a></li>
+
+            </ul>
+        </nav>
+        <div id="all">
+           <div id="header">
+                <h1 id="titolo-p">POWERFORGE</h1>
+                <p id="descrizione-p">Palestra di fitness e benessere con corsi specializzati e attrezzature moderne.</p>
+                <button onclick="document.getElementById('form-iscrizione').scrollIntoView({behavior:'smooth'})">Iscriviti ora</button>
+            </div>
+            <div id="corsi">
+                <h2 class="titolo-s">Corsi</h2>
+                <div id="corsi-grid">
+                    <div class="corso-card">
+                        <h3 class="titolo-corso">Crossfit</h3>
+                        <p class="orari">Lun - Mer - Ven | 07:00 - 09:00</p>
+                        <p class="descrizione-corso">Allenamento ad alta intensità che combina esercizi di forza, resistenza e agilità. Adatto a chi vuole mettersi alla prova e migliorare le proprie performance fisiche in poco tempo.</p>
+                    </div>
+                    <div class="corso-card">
+                        <h3 class="titolo-corso">Yoga</h3>
+                        <p class="orari">Mar - Gio | 18:00 - 20:00</p>
+                        <p class="descrizione-corso">Disciplina millenaria che unisce movimento, respirazione e meditazione. Perfetta per chi vuole migliorare flessibilità, ridurre lo stress e ritrovare l'equilibrio corpo-mente.</p>
+                    </div>
+                    <div class="corso-card">
+                        <h3 class="titolo-corso">Boxe</h3>
+                        <p class="orari">Lun - Mer - Sab | 19:00 - 21:00</p>
+                        <p class="descrizione-corso">Allenamento completo che sviluppa forza, coordinazione e resistenza. Ideale per chi vuole scaricare la tensione, imparare a difendersi e migliorare la propria forma fisica.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="galleria">
+                <h2 class="titolo-s">Galleria</h2>
+                <div id="galleria-grid">
+                    <img src="img/foto1.jpg" alt="Palestra 1">
+                    <img src="img/foto2.jpg" alt="Palestra 2">
+                    <img src="img/foto3.jpg" alt="Palestra 3">
+                    <img src="img/foto4.jpg" alt="Palestra 4">
+                    <img src="img/foto5.jpg" alt="Palestra 5">
+                    <img src="img/foto6.jpg" alt="Palestra 6">
+                </div>
+            </div>
+            <div id="form-iscrizione">
+                <h2 id="titolo-iscrizione" class="titolo-s">ISCRIZIONE</h2>
+                <form id="form">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" id="cognome" name="cognome" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+                    <label for="corso">Corso:</label>
+                    <input type="text" id="corso" name="corso" required><br><br>
+                    <input type="submit" value="Iscriviti">
+                </form>
+            </div>
+            <div id="contatti">
+                <h2 id="titolo-contatti" class="titolo-s">CONTATTI</h2>
+                <p id="telefono-contatti">Telefono: 123-456-7890</p>
+                <p id="email-contatti">Email: info@palestra.it</p>
+                <p id="indirizzo-contatti">Indirizzo: Via Galileo Galilei 7 Pordenone PN</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44368.467195800506!2d12.594194421679694!3d45.97067630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47797b6b624eceb1%3A0xcce2edae09567e5!2sFitActive%20Pordenone!5e0!3m2!1sen!2sit!4v1772211130378!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
