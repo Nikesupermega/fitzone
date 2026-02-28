@@ -104,6 +104,59 @@ nav a:hover {
     z-index: 1;
 }
 
+/* ANIMAZIONE TITOLO */
+#titolo-p {
+    animation: fadeInDown 1.2s ease forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ANIMAZIONE DESCRIZIONE E BOTTONE */
+#descrizione-p {
+    animation: fadeInDown 1.2s ease 0.3s forwards;
+    opacity: 0;
+}
+
+#header button {
+    animation: fadeInDown 1.2s ease 0.6s forwards;
+    opacity: 0;
+}
+
+/* PULSE BOTTONE */
+#header button {
+    animation: fadeInDown 1.2s ease 0.6s forwards, pulse 2s infinite 1.8s;
+    opacity: 0;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,40,0,0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(255,40,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,40,0,0); }
+}
+
+/* ANIMAZIONE CARD CORSI */
+.corso-card {
+    animation: fadeIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.corso-card:nth-child(2) { animation-delay: 0.2s; }
+.corso-card:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 #descrizione-p {
     font-size: 1.1em;
     color: var(--testo-muted);
